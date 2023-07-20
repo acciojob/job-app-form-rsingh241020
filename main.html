@@ -1,89 +1,58 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <title>Job Application</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        select,
-        input[type="radio"],
-        input[type="url"],
-        input[type="number"],
-        input[type="date"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <form method="POST">
-        <h2>Job Application</h2>
-        <label for="name">Name*</label>
-        <input type="text" id="name" name="name" required>
+	<!DOCTYPE html>
 
-        <label for="email">Email*</label>
-        <input type="email" id="email" name="email" required>
+<html>
 
-        <label>Gender*</label>
-        <label><input type="radio" name="gender" value="male" required> Male</label>
-        <label><input type="radio" name="gender" value="female" required> Female</label>
-        <label><input type="radio" name="gender" value="other" required> Other</label>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
 
-        <label for="laptop">Laptop Brands*</label>
-        <select id="laptop" name="laptop" required>
-            <option value="">Select one...</option>
-            <option value="Apple">Apple</option>
-            <option value="Asus">Asus</option>
-            <option value="HP">HP</option>
-        </select>
+<body>
+  <form method="post">
+    <label for="portfolio">Portfolio</label>
+    <input type="url" name="portfolio" required id="portfolio" placeholder="website URL of their portfolio"><br>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required placeholder="Name"><br>
+    <label for="email">Email</label>
+    <input type="email" name="email" required id="email" placeholder="Email">
+    <br>
+    <label for="gender">Gender</label>
+    <input type="radio" name="gender" id="gender" required placeholder="radio">Male
+    <input type="radio" name="gender" id="gender" required placeholder="radio">Famale<br>
+    <label for="laptop">Car Brands</label>
+    <select id="laptop">
+      <option>Apple</option>
+      <option>Asus</option>
+      <option>HP</option>
+    </select>
+    <br>
+    <label for="age">Age</label>
+    <input type="Age" name="age" id="age" required placeholder="Age">
+    <br>
+    <label for="dob">Date of Purchase</label>
+    <input type="date" name="dob" id="dob" required placeholder="Date of Birdth"><br>
+    <label for="password">Passward</label>
+    <input type="password" name="" id="password" required placeholder="Password"><br>
+    <button type="submit">Submit</button>
 
-        <label for="age">Age*</label>
-        <input type="number" id="age" name="age" required>
-
-        <label for="dob">DOB*</label>
-        <input type="date" id="dob" name="dob" required>
-
-        <label for="password">Password*</label>
-        <input type="password" id="password" name="password" required>
-
-        <label for="portfolio">Portfolio URL</label>
-        <input type="url" id="portfolio" name="portfolio">
-
-        <input type="submit" value="Submit">
-    </form>
+    
+  </form>
+  
 </body>
+
+</html>
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
+
+</body>
+
 </html>
